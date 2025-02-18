@@ -1,0 +1,200 @@
+/* navbar styling */
+
+.navbar {
+    background-color: turquoise;
+}
+.navbar .navbar-brand {
+    font-family: 'Cambria', 'Cochin', 'Georgia', 'Times', 'Times New Roman', serif;
+}
+
+
+/* header section of the page, styling heading */
+
+header {
+    text-align: center;
+    padding: 130px 70px 70px 70px;
+    background-color: #008080;
+    color: Azure;
+}
+
+header .display-4 {
+    font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
+
+/* (blog/post) section for styling heading and card*/
+
+.main_heading {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 50px;
+}
+
+.main_heading h3 {
+    color:#008080;
+}
+
+.posts .card-link {
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.bi.bi-chat-right-text {
+    color: black;
+}
+
+/* Sign Form styling */
+
+#formdata .container {
+    margin-top: 20px;
+    padding: 10px 12px;
+    background-color: Aliceblue;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.formdata .form-control {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.formdata .col {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.formdata form {
+    padding: 20px;
+}
+
+.formdata button {
+    min-width: 12rem;
+}
+
+/* Blog post form styling */
+
+.BlogPost .form-group {
+    margin-bottom: 20px;
+}
+
+.BlogPost form {
+    padding: 20px;
+}
+
+.BlogPost .form-label {
+    font-weight:bold;
+}
+
+.BlogPost input {
+    border-radius: 0px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.BlogPost textarea {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    min-height: 15rem;    
+}
+
+.BlogPost button {
+    min-width: 12rem;
+}
+
+/* =============================   [Detail section and comment section of blog posts] ============================== */
+
+.detail .container-fluid {
+    padding-top: 50px;
+}
+
+.detail .col-12 {
+    padding: 8px 12px;
+}
+
+.detail .nav {
+    padding: 0px; 
+}
+
+.detail .nav .btn  {
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.comment_section .container {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-top: 20px;
+    padding: 8px 12px;
+}
+
+
+.comment_section #comment_box {
+    max-width: 25rem;
+    margin-bottom: 12px;
+    padding: 4px 8px;
+    border: 1px solid grey;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.detail #comment_box span {
+    font-size:small;
+    color: grey;
+}
+
+.detail #comment_box a {
+    text-decoration: none;
+}
+
+@media screen and (min-width:768px) {
+    .detail .container-fluid {
+        padding-top: 70px;
+    }
+}
+
+/* =======================================    [footer/bottom-section]    ============================================ */
+
+footer {
+    margin-top: 20px;
+    padding: 30px 40px;
+    background-color: #008080;
+    color: Azure;
+}
+
+footer .container-fluid {
+    padding-top: 0px 12px;
+}
+
+footer h4 {
+    padding: 8px 16px;
+}
+
+footer .nav .nav-link{
+    color: Azure;
+}
+
+#social_link .nav-link {
+    margin: 5px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.bi.bi-chevron-right {
+    color:aqua;
+}
+
+.form_content {
+    padding-left: 16px;
+}
+
+.form_content input{
+    border-radius: 0px;
+}
+
+.form_content button {
+    background-color:deepskyblue;
+    border-radius: 0px;
+}
+
+@media screen and (max-width:768px) {
+    footer .col-12 {
+        margin-bottom: 40px;
+    }
+}

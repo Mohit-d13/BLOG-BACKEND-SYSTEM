@@ -1,0 +1,50 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+
+    <section class="BlogPost" id="BlogPost">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col">
+                    <h4 class="text-left mb-4">Rock Blog</h4>
+                    <h3 class="text-center mb-4">Update BLOG</h3>
+                    <form method="post" action="." enctype="multipart/form-data">    
+                        {% csrf_token %}
+                        <div class="form-group">
+                            <label for="postTitle" class="form-label">Title:</label>
+                            <input type="text" id="postTitle" name="title" class="form-control" value="{{ form.title.value|default_if_none:'' }}">
+                        </div>
+                        <div class="form-group">
+                            <label for="postDes" class="form-label">Description:</label>
+                            {{ form.description }}
+                        </div>
+                        <div class="form-group">
+                            <label for="postArticle" class="form-label">Article:</label>
+                            {{ form.article }}
+                          </div>
+                          <div class="form-group">
+                            <label for="imagefile" class="form-label">Upload Image:</label>
+                            {{ form.image }}
+                          </div>
+                          {% if form.errors or form.non_field_error %}
+                            <div class="mb-3 p-6 bg-danger border">
+                                {% for field in form %}
+                                    {{ field.errors }}
+                                {% endfor %}
+                                
+                                {{ form.non_field_error }}
+                                
+                            </div>
+                            {% endif %}
+                          <hr class="my-3">
+                          <div class="text-center">
+                            <button type="submit" class="btn btn-primary">Save</button>
+                          </div>
+                      </form>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    
+{% endblock %}

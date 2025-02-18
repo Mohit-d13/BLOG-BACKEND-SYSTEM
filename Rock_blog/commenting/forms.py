@@ -1,0 +1,18 @@
+from django import forms
+from .models import Comment, Reply 
+
+class CommentForm(forms.ModelForm):
+    class Meta:
+        model = Comment
+        fields = ["body",]
+        
+    body = forms.CharField(widget=forms.Textarea)
+
+        
+class ReplyForm(forms.ModelForm):
+    class Meta:
+        model = Reply
+        fields = ['body',]
+        
+    body = forms.CharField(widget=forms.Textarea())
+        

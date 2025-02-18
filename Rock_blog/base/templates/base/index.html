@@ -1,0 +1,49 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+
+    <header>
+        <div class="container-fluid">
+            <div class="jumbotron">
+                <h1 class="display-4">Start your blog journey with us</h1>
+                <p class="lead">Create unique and beautiful blog</p>
+                {% if request.user.is_authenticated %}
+                    <a class="btn btn-dark btn-lg" href="{% url 'blog:create' %}" role="button">Start Blogging</a>
+                {% else %}
+                    <a class="btn btn-dark btn-lg" href="{% url 'base:login' %}" role="button">Start Blogging</a>
+                {% endif %}
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <section class="posts" id="posts">
+        <div class="container mb-5">
+            <div class="row gy-3">
+                <div class="main_heading">
+                    <h3>Our Blog</h3>
+                    <h1>Blog &amp; Articles</h1>
+                    <p class="lead">Enjoy our Blog and articles, post your own. Start the journey.</p> 
+                </div>
+                {% for post in posts %}
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <img class="card-img-top img-fluid h-100" src="{{ post.image.url }}" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ post.title }}</h5>
+                                <p class="card-text text-muted">{{ post.description }}</p>
+                                <div class="d-flex justify-content-between">
+                                    <a class="card-link" href="{% url 'commenting:detail' post.id %}">Read more</a>
+                                    <a class="card-link mx-2" id="commentbox" href="{% url 'commenting:detail' post.id %}">
+                                        <i class="bi bi-chat-right-text" style="color:black; font-size:1.2rem;"></i>
+                                    </a>
+                                </div>
+                            </div>
+                          </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    
+{% endblock %}
