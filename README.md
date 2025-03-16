@@ -1,13 +1,43 @@
-# Django Blog Project
+# BLOG-BACKEND-SYSTEM
+
+**COMPANY**: CODETECH IT SOLUTIONs
+**NAME**: MOHIT DAMLE
+**INTERN ID**: CT12WSJC
+**DOMAIN**: BACKEND WEB DEVELOPMENT
+**DURATION**: 12 WEEKS
+**MENTOR**: NEELA SANTOSH
+
+## Description
 
 A full-featured blog built with Django, MySQL, and Bootstrap.
 
-## Features
+## Core Features
 
-- User authentication and authorization
-- Create, read, update, and delete blog posts
-- Comment system
-- Responsive design using Bootstrap
+- Post Creation and Management:
+    - Users (typically administrators) can create new blog posts with titles, content, and publication dates.
+    - Django's models define the structure of the posts in the MySQL database.
+    - The Django admin interface provides a user-friendly way to create, edit, and delete posts.
+- Post Display:
+    - Blog posts are displayed on the website, typically in a list or grid format.
+    - Django's templates allow for flexible presentation of the post content.
+    - Views handle the logic of retrieving posts from the database and passing them to the templates.
+- Database Integration (MySQL):
+    - MySQL stores the blog's data, including posts, users, and comments.
+    - Django's Object-Relational Mapper (ORM) simplifies database interactions, allowing you to work with Python objects instead of raw SQL queries.
+    - This makes it easy to create, read, update, and delete data.
+- User Authentication:
+    - Django's built-in authentication system enables user registration, login, and logout.
+    - This is essential for controlling who can create and manage blog posts.
+- Comments:
+    - Users can leave comments on blog posts.
+    - Comments are stored in the MySQL database and associated with the corresponding posts.
+    - Django's forms can be used to handle comment submission.
+- Admin Interface:
+    - Django's admin interface provides a powerful and customizable way to manage the blog's content and users.
+    - This includes features for creating, editing, and deleting posts, managing users, and more.
+- URL Routing:
+    - Django's URL routing system maps URLs to specific views, allowing for clean and organized website structure.
+    - This allows for urls such as /posts/1, for the first post, and /categories/django, for all posts in the django category.
 
 ## Technology Stack
 
@@ -48,73 +78,6 @@ DATABASES = {
         'PORT': '3306',
     }
 }
-```
-
-## Project Structure
-
-```
-Rock_blog/
-│
-├──Rock_blog/
-│   ├── base/                       # Core/Base App
-│   │   ├── templates/              # Base app Templates
-│   │   │   └── base/
-│   │   │       ├── base.html       # Base template
-│   │   │       ├── index.html      # Homepage
-│   │   │       ├── login.html      # Login page
-│   │   │       └── signup.html     # Sign up page
-│   │   ├── admin.py                # Model Registration
-│   │   ├── apps.py 
-│   │   ├── forms.py                # Form definitions
-│   │   ├── models.py               # Database Models
-│   │   ├── test.py                 # Unit Tests
-│   │   ├── urls.py                 # URL Configurations
-│   │   └── views.py                # View Functions
-│   │
-|   ├── blog/                       # Blog App
-│   │   ├── templates/              # Blog app template
-│   │   │   └── blog/
-│   │   │       ├── create.html     # New Blog template
-│   │   │       └── update.html     # Update Blog template
-│   │   ├── admin.py                # Model Registration
-│   │   ├── apps.py                 
-│   │   ├── forms.py                # Form definitions
-│   │   ├── models.py               # Database Model
-│   │   ├── tests.py                # Unit tests
-│   │   ├── urls.py                 # URL configurations
-│   │   └── views.py                # View Functions
-│   │
-|   ├── commenting/                 # Comment App
-│   │   ├── templates/              # Comment app template
-│   │   │   └── commenting/
-│   │   │       ├── detail.html     # Blog Detail Page
-│   │   │       └── reply.html      # Reply template
-│   │   ├── admin.py                # Model Registration
-│   │   ├── apps.py          
-│   │   ├── forms.py                # Form definitions
-│   │   ├── models.py               # Database model 
-│   │   ├── tests.py                # Unit Tests
-│   │   ├── urls.py                 # URL configurations
-│   │   └── views.py                # View functions
-│   │
-│   ├── Rock_blog/
-│   │   ├── asgi.py                 # ASGI configurations
-│   │   ├── settings.py             # Project Settings
-│   │   ├── urls.py                 # Project urls
-│   │   └── wsgi.py                 # WSGI configurations
-│   │
-│   ├── static/                     # Static Files
-│   │   └── css/                    # CSS Files
-│   │       └── style.css           # Styling template
-│   │
-│   ├── UPLOADED_IMG/               # Image Files
-│   │   └── images                  
-│   │
-│   └── manage.py                   # Django management script
-│
-├── .gitignore                      # Git Ignore File           
-├── requirements.txt                # Project dependencies
-└── README.md                       # Project documentation
 ```
 
 ## Deployment
