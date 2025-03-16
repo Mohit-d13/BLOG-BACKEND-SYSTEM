@@ -1,11 +1,16 @@
 # BLOG-BACKEND-SYSTEM
 
-**COMPANY**: CODETECH IT SOLUTIONs
-**NAME**: MOHIT DAMLE
-**INTERN ID**: CT12WSJC
-**DOMAIN**: BACKEND WEB DEVELOPMENT
-**DURATION**: 12 WEEKS
-**MENTOR**: NEELA SANTOSH
+*COMPANY*: CODETECH IT SOLUTIONS
+
+*NAME*: MOHIT DAMLE
+
+*INTERN ID*: CT12WSJC
+
+*DOMAIN*: BACKEND WEB DEVELOPMENT
+
+*DURATION*: 12 WEEKS
+
+*MENTOR*: NEELA SANTOSH
 
 ## Description
 
@@ -13,29 +18,35 @@ A full-featured blog built with Django, MySQL, and Bootstrap.
 
 ## Core Features
 
-- Post Creation and Management:
+- **Post Creation and Management**:
     - Users (typically administrators) can create new blog posts with titles, content, and publication dates.
     - Django's models define the structure of the posts in the MySQL database.
     - The Django admin interface provides a user-friendly way to create, edit, and delete posts.
-- Post Display:
+
+- **Post Display**:
     - Blog posts are displayed on the website, typically in a list or grid format.
     - Django's templates allow for flexible presentation of the post content.
     - Views handle the logic of retrieving posts from the database and passing them to the templates.
-- Database Integration (MySQL):
+
+- **Database Integration (MySQL)**:
     - MySQL stores the blog's data, including posts, users, and comments.
     - Django's Object-Relational Mapper (ORM) simplifies database interactions, allowing you to work with Python objects instead of raw SQL queries.
     - This makes it easy to create, read, update, and delete data.
-- User Authentication:
+
+- **User Authentication**:
     - Django's built-in authentication system enables user registration, login, and logout.
     - This is essential for controlling who can create and manage blog posts.
-- Comments:
+
+- **Comments**:
     - Users can leave comments on blog posts.
     - Comments are stored in the MySQL database and associated with the corresponding posts.
     - Django's forms can be used to handle comment submission.
-- Admin Interface:
+
+- **Admin Interface**:
     - Django's admin interface provides a powerful and customizable way to manage the blog's content and users.
     - This includes features for creating, editing, and deleting posts, managing users, and more.
-- URL Routing:
+
+- **URL Routing**:
     - Django's URL routing system maps URLs to specific views, allowing for clean and organized website structure.
     - This allows for urls such as /posts/1, for the first post, and /categories/django, for all posts in the django category.
 
