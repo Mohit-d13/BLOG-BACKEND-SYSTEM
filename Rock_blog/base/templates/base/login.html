@@ -2,12 +2,12 @@
 
 {% block content %}
 
-    <section class="formdata" id="formdata">
+    <section class="login-box" id="login-box">
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <h4 class="text-left mb-4">Rock Blog</h4>
-                    <h3 class="text-center">Login</h3>
+                    <h4 class="text-left">Rock Blog</h4>
+                    <h3 class="text-center">Log In</h3>
                     <form method="post" action=".">     
                         {% csrf_token %}
                         <div class="form-group">
@@ -18,11 +18,11 @@
                         </div>
                           <hr class="my-3">
                           <a href="#" class="text-right text-muted" style="text-decoration:none;">Forget Password?</a>
-                          <div class="text-center">
+                          <div class="text-center my-4">
                             <button type="submit" class="btn btn-primary">Log In</button>
                           </div>
                       </form>
-                      <p class="mt-4">Create an account<a href="#" style="text-decoration:none;"> sign up</a></p>
+                      <p class="mt-4">Create an account <a href="#" style="text-decoration:none;">Sign up</a></p>
                 </div>
             </div>
         </div>

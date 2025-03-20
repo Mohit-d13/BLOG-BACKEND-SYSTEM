@@ -8,7 +8,7 @@
 }
 
 
-/* header section of the page, styling heading */
+/* header section of the page, styling heading */    
 
 header {
     text-align: center;
@@ -44,30 +44,37 @@ header .display-4 {
     color: black;
 }
 
-/* Sign Form styling */
+/* ==================================== [Login/Sign up Form styling] =========================== */
 
-#formdata .container {
-    margin-top: 20px;
+.login-box .container {
+    margin-top: 75px;
+    max-width: 26rem;
+    min-height: 32rem;
     padding: 10px 12px;
     background-color: Aliceblue;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
-.formdata .form-control {
+.login-box h3 {
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.login-box .form-control {
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-.formdata .col {
+.login-box .col {
     padding-left: 20px;
     padding-right: 20px;
 }
 
-.formdata form {
+.login-box form {
     padding: 20px;
 }
 
-.formdata button {
+.login-box button {
     min-width: 12rem;
 }
 
